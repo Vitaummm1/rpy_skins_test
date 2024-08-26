@@ -1,33 +1,39 @@
-﻿# The script of the game goes in this file.
+﻿init -1500 python:
+    renpy.add_layer("clothes", "master")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+    lily_clothes = ""
+
+    def show_statement_replace(render_name, at_list=[], layer='master', what=None, zorder=0, tag=None, behind=[],atl=None):
+        renpy.show(render_name, at_list=at_list, layer=layer, what=what, zorder=zorder, tag=tag, behind=behind,atl=atl)
+        
+        if lily_clothes is not "":
+            print(render_name)
+            print(lily_clothes)
+            renpy.show(" ".join(render_name) + lily_clothes, at_list=at_list, layer="clothes", what=what, zorder=zorder, tag=tag, behind=behind,atl=atl)
+
 
 define e = Character("Eileen")
 
+define config.show = show_statement_replace
 
-# The game starts here.
 
 label start:
+    menu:
+        "Qual a cor da roupa de lily?"
+        "Vermelho":
+            $ lily_clothes = "_red"
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+        "Preto":
+            $ lily_clothes = "_black"
 
-    scene bg room
+        "Pink":
+            $ lily_clothes = "_pink"
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
-    show eileen happy
-
-    # These display lines of dialogue.
+    show ep8 lilylewd_016
 
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
 
     return
