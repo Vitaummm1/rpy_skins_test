@@ -276,35 +276,53 @@ style quick_button:
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
-
+# Esta tela é responsável por listar os personagens que estão passíveis de mudar de skin
 screen skins():
     tag menu
     style_prefix "check"
     use game_menu(_("Skins"), scroll="viewport"):
         hbox:
             spacing 40
-            vbox:
+            button:
+                action ShowMenu("character_skins", "julia")
                 frame:
-                    maximum 450, 593
+                    maximum 339, 593
                     add get_selected_skin("julia") fit "contain"
-                    textbutton _("Julia"):
+                    text _("Julia"):
                         anchor 0.5, 0.5
                         pos 0.5, 0.95
-                        text_style "select_skin_character"
-                        action ShowMenu("character_skins", "julia")
+                        style "select_skin_character"
 
-            vbox:
+            button:
+                action ShowMenu("character_skins", "simon")
                 frame:
-                    maximum 450, 593
+                    maximum 339, 593
                     add get_selected_skin("simon") fit "contain"
-                    textbutton _("Simon"):
+                    text _("Simon"):
                         anchor 0.5, 0.5
                         pos 0.5, 0.95
-                        text_style "select_skin_character"
-                        action ShowMenu("character_skins", "simon")
+                        style "select_skin_character"
+
+# Esta tela é responsável por agir como um menu para a escolha da skin e fazer sua troca para o shot seguinte
+screen skins_menu(skins):
+    hbox:
+        align (0.5, 0.5)
+        spacing 40
+        for skin in skins:
+            $ character = skin.split("-")[0]
+            $ skin = skin.split("-")[1]
+            button:
+                action [Function(force_update_skins, character, skin), Return()]
+                frame:
+                    maximum 339, 593
+                    add (character + skin) fit "contain"
+                    text _(character.title() + " " + skin):
+                        anchor 0.5, 0.5
+                        pos 0.5, 0.95
+                        style "select_skin_character"
 
 
-
+# Esta tela é responsável por fazer a troca da skin
 screen character_skins(character):
     tag menu
     style_prefix "check"
@@ -312,18 +330,18 @@ screen character_skins(character):
         hbox:
             spacing 40
             for skin in get_character_skins(character):
-                vbox:
+                button:
+                    if _menu:
+                        action [Function(force_update_skins, character, skin), ShowMenu("skins")]
+                    else:
+                        action [Function(update_skins, character, skin), ShowMenu("skins")]
                     frame:
-                        maximum 450, 593
+                        maximum 339, 593
                         add (character + skin) fit "contain"
-                        textbutton _(character.title() + " " + skin):
+                        text _(character.title() + " " + skin):
                             anchor 0.5, 0.5
                             pos 0.5, 0.95
-                            text_style "select_skin_character"
-                            if _menu:
-                                action [Function(force_update_skins, character, skin), ShowMenu("skins")]
-                            else:
-                                action [Function(update_skins, character, skin), ShowMenu("skins")]
+                            style "select_skin_character"
 
 
 

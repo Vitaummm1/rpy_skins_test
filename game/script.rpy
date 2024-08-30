@@ -1,52 +1,58 @@
 ﻿init -1000 python:
-    import json
-    import os
-
     skins_selected = []
     last_show_image = ""
     last_show_image_tuple = {}
     to_update_context = False
 
 
-    def create_layers():
+    def create_layers(): # Este método é responsável por inicializar as layers
         global layers
         for i in range(1, len(layers)):
             renpy.add_layer(layers[i], layers[i-1])
 
     create_layers()
 
-    def clear_layers():
+    def clear_layers(): # Este método faz a limpeza das layers, iterando sobre cada uma delas e limpando a exibição
         global layers
         for layer in layers:
             renpy.scene(layer)
 
     def show_statement_replace(render_name, at_list=[], layer='master', what=None, zorder=0, tag=None, behind=[], atl=None):
         global layers, last_show_image, last_show_image_tuple
-        
+        # Começa fazendo a limpeza das layers
         clear_layers()
+        # Aqui obtém-se a configuração específica do arranjo das layers, do que deve ser exibido e onde
         layers_config = get_layers_config(" ".join(render_name))
 
+        # Armazena a imagem que é mostrada e o tuple, para uso futuro pelo force_update_skins
         last_show_image = " ".join(render_name[:2])
         last_show_image_tuple = render_name
 
-        base_render_name = " ".join(render_name)
-        check_render_layer = "{}_{}".format(base_render_name, layers[1])
+        base_render_name = " ".join(render_name) # Nome do render. Ex.: ep8 lilysex_001
+        check_render_layer = "{}_{}".format(base_render_name, layers[1]) # Nome para verificar se faz parte do sistema de layers. Ex.: ep8 lilysex_001_layer1
         
-        # Verifica se a imagem possui sistema de camadas. Caso possua, apenas faz o render normalmente
+        # Verifica se a imagem possui sistema de camadas. Caso não possua, apenas faz o render normalmente
         if not renpy.has_image(check_render_layer):
             renpy.show(base_render_name, at_list=at_list, layer=layer, what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
             return
 
+        # Iteração em cada camada para exibir uma imagem, caso haja
         for i in range(1, len(layers)):
-            if layers_config is not None and len(layers_config) > i - 1:
+            # Caso exista uma configuração de layer para este shot. Ex.: ["ep8 lilysex_001_layer1", "ep8 lilysex_001_layer3", "ep8 lilysex_001_layer2"]
+            # Assim, ep8 lilysex_001_layer1 será exibido na layer1, ep8 lilysex_001_layer3 será exibido na layer2 e ep8 lilysex_001_layer2 será exibido na layer3
+            if layers_config is not None and len(layers_config) > i - 1: 
                 render_layer = "{}_{}".format(base_render_name, layers_config[i - 1])
-            else:
+            else: # Caso não exista configuração de layer, os shots serão exibidos na configuração default de layers
                 render_layer = "{}_{}".format(base_render_name, layers[i])
             
+            # Faz a verificação se, para a layer que será exibida, há uma skin selecionada. Caso haja, o shot com a skin será exibido no lugar do default
+            # Ex. de skin: ep8 lilysex_001_layer2_lily2 -> Se houver selecionada a skin _lily2 no array de skins_selected, essa imagem será exibida no lugar de ep8 lilysex_001_layer2
             render_layer = check_and_select_skin(render_layer)
             
+            # Por fim, caso exista uma imagem para ser exibida, ela será exibida. Serve para evitar problemas em que há um "render_not_found"
             if renpy.has_image(render_layer):
                 renpy.show(render_layer, at_list=at_list, layer=layers[i], what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
+
 
     def check_and_select_skin(render_layer):
         # Verifica se existe a imagem com skin, dentre as selecionadas, se não, exibe a default
@@ -75,12 +81,15 @@
     def force_update_skins(character, look):
         # Este método é utilizado para mudar as skins enquanto o jogo está acontecendo. Ou seja, se a mudança de skin precisar ser instantânea, enquanto o jogo acontece, use este método
         global last_show_image_tuple, to_update_context
-        update_skins(character, look)
-        to_update_context = True
-        show_statement_replace(last_show_image_tuple)
+        update_skins(character, look) # Faz a atualização do array de skins_selected
+        to_update_context = True # Marca como positivo para o update_skins_callback ser executado
+        show_statement_replace(last_show_image_tuple) # Faz atualização dos shots
         
         
-    def test_context_callback():
+    def update_skins_callback():
+        # Este callback periódico executa a cada 20hz. Ele deverá ser executado, de fato, apenas se a variável to_update_context for True e não estiver no contexto de menu.
+        # Caso esteja no menu e a variável to_update_context esteja True, nada ocorrerá, garantindo que a atualização das interações e do shot ocorra assim que voltar para o
+        # jogo. Setar o to_update_context para True no final é imprescindível para garantir que este método não fique ocorrendo todas as vezes, o tempo todo
         global to_update_context, last_show_image_tuple
         if to_update_context and not _menu:
             show_statement_replace(last_show_image_tuple)
@@ -93,8 +102,8 @@ define julia = Character(_("Julia"), color="#C161D4", voice_tag="julia")
 define simon = Character("Simon", color="#5995ED", voice_tag="simon")
 define ep1_arcade_machine = Character(_("MACHINE"))
 define d = dissolve
-define config.periodic_callback = test_context_callback
-define config.show = show_statement_replace
+define config.periodic_callback = update_skins_callback # Callback para ser executado a cada 20hz
+define config.show = show_statement_replace # Igual é no projeto principal do FreshWomen
 
 # image susan1 = Movie(play="images/ep8 freetimejulia_001_2_layer1.webm", side_mask=True)
 
@@ -136,11 +145,11 @@ label start:
     simon "teste de pelos pubianos"
     show ep8 freetimejulia_001_1 with d
     simon "teste de pelos pubianos"
-    show ep8 freetimejulia_001_2 with d
+    show ep8 freetimejulia_001_2
     show dragon_move with d
     simon "teste de pelos pubianos"
-    show ep8 freetimejulia_001_4 with d
-    simon "Dragon Move freetime"
+    # show ep8 freetimejulia_001_4 with d
+    # simon "Dragon Move freetime"
 
     show ep8 freetimejulia_003 with d
     julia "I will end you all!"
