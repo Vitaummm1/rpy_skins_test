@@ -1,0 +1,1 @@
+image dragon_move = Movie(play='images/dragon.webm', mask='images/dragon_mask.webm', framedrop=False)

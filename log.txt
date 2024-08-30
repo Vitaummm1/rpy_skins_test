@@ -1,37 +1,38 @@
-Mon Aug 26 14:21:04 2024
+Fri Aug 30 10:53:57 2024
 Windows-10-10.0.22000
 Ren'Py 7.5.3.22090809
  
 
-Bootstrap to the start of init.init took 0.07s
+Bootstrap to the start of init.init took 0.08s
 Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata. took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.32s
+Loading save slot metadata. took 0.22s
 Loading persistent took 0.00s
 Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
-Running init code took 0.04s
+Running init code took 0.10s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
 Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.21s
+Creating interface object took 0.24s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
+Load screen analysis took 0.01s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.06s
@@ -44,8 +45,7 @@ Vendor: 'NVIDIA Corporation'
 Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
 Version: '4.6.0 NVIDIA 560.94'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Could not open 'cache/shaders.txt':
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
@@ -54,3 +54,806 @@ Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 95.37s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 309.33s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 366.88s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 514.55s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 588.66s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1077.65s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.25s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 4258, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 53, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 743, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/viewport.py", line 298, in event
+    rv = super(Viewport, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/behavior.py", line 1073, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 1008, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 322, in run
+    new_rv = run(i, *args, **kwargs)
+  File "renpy/display/behavior.py", line 329, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 578, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 77, in new_update_skins
+    show_statement_replace(last_show_image_tuple)
+  File "game/script.rpy", line 50, in show_statement_replace
+    renpy.show(render_layer, at_list=at_list, layer=layers[i], what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
+  File "renpy/exports.py", line 694, in show
+    for i in at_list:
+TypeError: 'NoneType' object is not iterable
+
+While running game code:
+  File "renpy/common/00action_other.rpy", line 578, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 77, in new_update_skins
+    show_statement_replace(last_show_image_tuple)
+  File "game/script.rpy", line 50, in show_statement_replace
+    renpy.show(render_layer, at_list=at_list, layer=layers[i], what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
+TypeError: 'NoneType' object is not iterable
+Resetting cache.
+Bootstrap to the start of init.init took 1096.10s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1097.94s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 451, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3810, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 462, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 653, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 308, in execute
+    screen character_skins(character):
+  File "game/screens.rpy", line 308, in execute
+    screen character_skins(character):
+  File "game/screens.rpy", line 311, in execute
+    use game_menu(_(character.title()), scroll="viewport"):
+  File "game/screens.rpy", line 478, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 478, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 487, in execute
+    frame:
+  File "game/screens.rpy", line 490, in execute
+    hbox:
+  File "game/screens.rpy", line 496, in execute
+    frame:
+  File "game/screens.rpy", line 499, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 501, in execute
+    viewport:
+  File "game/screens.rpy", line 510, in execute
+    vbox:
+  File "game/screens.rpy", line 511, in execute
+    transclude
+  File "game/screens.rpy", line 311, in execute
+    use game_menu(_(character.title()), scroll="viewport"):
+  File "game/screens.rpy", line 312, in execute
+    hbox:
+  File "game/screens.rpy", line 314, in execute
+    for skin in get_character_skins(character):
+  File "game/screens.rpy", line 315, in execute
+    vbox:
+  File "game/screens.rpy", line 316, in execute
+    frame:
+  File "game/screens.rpy", line 319, in execute
+    textbutton _(character.title() + " " + skin):
+  File "game/screens.rpy", line 319, in keywords
+    textbutton _(character.title() + " " + skin):
+  File "game/screens.rpy", line 323, in keywords
+    if _menu:
+  File "game/screens.rpy", line 323, in keywords
+    if _menu:
+  File "game/screens.rpy", line 324, in <module>
+    action [Function(new_update_skins, character, skin), ShowMenu("skins")]
+NameError: name 'new_update_skins' is not defined
+
+While running game code:
+  File "game/screens.rpy", line 308, in execute
+    screen character_skins(character):
+  File "game/screens.rpy", line 308, in execute
+    screen character_skins(character):
+  File "game/screens.rpy", line 311, in execute
+    use game_menu(_(character.title()), scroll="viewport"):
+  File "game/screens.rpy", line 478, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 478, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 487, in execute
+    frame:
+  File "game/screens.rpy", line 490, in execute
+    hbox:
+  File "game/screens.rpy", line 496, in execute
+    frame:
+  File "game/screens.rpy", line 499, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 501, in execute
+    viewport:
+  File "game/screens.rpy", line 510, in execute
+    vbox:
+  File "game/screens.rpy", line 511, in execute
+    transclude
+  File "game/screens.rpy", line 311, in execute
+    use game_menu(_(character.title()), scroll="viewport"):
+  File "game/screens.rpy", line 312, in execute
+    hbox:
+  File "game/screens.rpy", line 314, in execute
+    for skin in get_character_skins(character):
+  File "game/screens.rpy", line 315, in execute
+    vbox:
+  File "game/screens.rpy", line 316, in execute
+    frame:
+  File "game/screens.rpy", line 319, in execute
+    textbutton _(character.title() + " " + skin):
+  File "game/screens.rpy", line 319, in keywords
+    textbutton _(character.title() + " " + skin):
+  File "game/screens.rpy", line 323, in keywords
+    if _menu:
+  File "game/screens.rpy", line 323, in keywords
+    if _menu:
+  File "game/screens.rpy", line 324, in <module>
+    action [Function(new_update_skins, character, skin), ShowMenu("skins")]
+NameError: name 'new_update_skins' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 1116.32s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 4258, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 53, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 743, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/viewport.py", line 298, in event
+    rv = super(Viewport, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1399, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/behavior.py", line 1073, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 1008, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 322, in run
+    new_rv = run(i, *args, **kwargs)
+  File "renpy/display/behavior.py", line 329, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 578, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 80, in force_update_skins
+    show_statement_replace(last_show_image_tuple)
+  File "game/script.rpy", line 49, in show_statement_replace
+    renpy.show(render_layer, at_list=at_list, layer=layers[i], what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
+  File "renpy/exports.py", line 694, in show
+    for i in at_list:
+TypeError: 'NoneType' object is not iterable
+
+While running game code:
+  File "renpy/common/00action_other.rpy", line 578, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 80, in force_update_skins
+    show_statement_replace(last_show_image_tuple)
+  File "game/script.rpy", line 49, in show_statement_replace
+    renpy.show(render_layer, at_list=at_list, layer=layers[i], what=what, zorder=zorder, tag=tag, behind=behind, atl=atl)
+TypeError: 'NoneType' object is not iterable
+Resetting cache.
+Bootstrap to the start of init.init took 1184.37s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\keyke\\AppData\\Roaming/RenPy/backups\\Skin Tests':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1186.14s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: WindowsError(126, 'N\xe3o foi poss\xedvel encontrar o m\xf3dulo especificado')
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096

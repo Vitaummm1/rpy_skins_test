@@ -257,6 +257,7 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Skins") action Show("skins")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -275,6 +276,64 @@ style quick_button:
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
+
+screen skins():
+    tag menu
+    style_prefix "check"
+    use game_menu(_("Skins"), scroll="viewport"):
+        hbox:
+            spacing 40
+            vbox:
+                frame:
+                    maximum 450, 593
+                    add get_selected_skin("julia") fit "contain"
+                    textbutton _("Julia"):
+                        anchor 0.5, 0.5
+                        pos 0.5, 0.95
+                        text_style "select_skin_character"
+                        action ShowMenu("character_skins", "julia")
+
+            vbox:
+                frame:
+                    maximum 450, 593
+                    add get_selected_skin("simon") fit "contain"
+                    textbutton _("Simon"):
+                        anchor 0.5, 0.5
+                        pos 0.5, 0.95
+                        text_style "select_skin_character"
+                        action ShowMenu("character_skins", "simon")
+
+
+
+screen character_skins(character):
+    tag menu
+    style_prefix "check"
+    use game_menu(_(character.title()), scroll="viewport"):
+        hbox:
+            spacing 40
+            for skin in get_character_skins(character):
+                vbox:
+                    frame:
+                        maximum 450, 593
+                        add (character + skin) fit "contain"
+                        textbutton _(character.title() + " " + skin):
+                            anchor 0.5, 0.5
+                            pos 0.5, 0.95
+                            text_style "select_skin_character"
+                            if _menu:
+                                action [Function(force_update_skins, character, skin), ShowMenu("skins")]
+                            else:
+                                action [Function(update_skins, character, skin), ShowMenu("skins")]
+
+
+
+style select_skin_character is text:   
+    color "#fba0af"
+    hover_color "#ffffff"
+    font "gui/font/College Block.otf"
+    size 40
+    outlines [ (absolute(4), "#000000", absolute(0), absolute(1)),
+                (absolute(4), "#250038", absolute(0), absolute(7)) ]
 
 ################################################################################
 ## Main and Game Menu Screens
@@ -306,6 +365,9 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
+
+        # if main_menu:
+        textbutton _("Skins") action ShowMenu("skins")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
