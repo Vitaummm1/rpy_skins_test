@@ -2,7 +2,7 @@
 
     scene black with dissolve
 
-    call screen skins_menu(["simon-1", "simon-2", "julia-default", "julia-2"])
+    call screen skins_menu([{"character": "julia", "image":"default", "text": "Roupa de banho"}, {"character": "julia", "image": "2", "text": "Roupa padrão"}], "Que roupa Julia deveria vestir?")
 
     # menu:
     #     "Simon 1":

@@ -4,6 +4,7 @@ init -1 python:
     # Skins disponíveis. Utilizadas para troca de skins nos menus
     skins_available = {
         "julia": ["default", "2"],
+        "susan": ["default", "1"],
         "simon": ["default", "1" ,"2"]
     }
 

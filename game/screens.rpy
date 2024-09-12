@@ -257,7 +257,7 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
-            textbutton _("Skins") action Show("skins")
+            # textbutton _("Skins") action Show("skins")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -294,6 +294,16 @@ screen skins():
                         style "select_skin_character"
 
             button:
+                action ShowMenu("character_skins", "susan")
+                frame:
+                    maximum 339, 593
+                    add get_selected_skin("susan") fit "contain"
+                    text _("Susan"):
+                        anchor 0.5, 0.5
+                        pos 0.5, 0.95
+                        style "select_skin_character"
+
+            button:
                 action ShowMenu("character_skins", "simon")
                 frame:
                     maximum 339, 593
@@ -304,19 +314,39 @@ screen skins():
                         style "select_skin_character"
 
 # Esta tela é responsável por agir como um menu para a escolha da skin e fazer sua troca para o shot seguinte
-screen skins_menu(skins):
+screen skins_menu(skins, message="What outfit do you think I should wear?"):
+    default teste = False
+    add Solid("#1A162B")
+    add "gui/skin/bg_screen.png"
+
+    text _(message):
+        anchor 0.5, 0.5
+        pos 0.5, 0.1
+
     hbox:
         align (0.5, 0.5)
-        spacing 40
+        spacing (200/len(skins))
         for skin in skins:
-            $ character = skin.split("-")[0]
-            $ skin = skin.split("-")[1]
-            button:
+            $ description = skin["text"]
+            $ character = skin["character"]
+            $ skin = skin["image"]
+
+            button at skin_opacity, skin_grayscale:
                 action [Function(force_update_skins, character, skin), Return()]
                 frame:
-                    maximum 339, 593
-                    add (character + skin) fit "contain"
-                    text _(character.title() + " " + skin):
+                    background Solid("#00000000")
+                    maximum 355, 725
+                    add "gui/skin/bg_skin_2.png" fit "fill"
+                    
+                    add (character + skin) fit "contain":
+                        align (0.5, 0.31)
+
+                    # add "gui/skin/border_skin.png" fit "fill"
+                            
+                    # add "gui/skin/card_skin.png" fit "fill":
+                    #     pos 0, 76
+
+                    text _(description):
                         anchor 0.5, 0.5
                         pos 0.5, 0.95
                         style "select_skin_character"
@@ -330,14 +360,40 @@ screen character_skins(character):
         hbox:
             spacing 40
             for skin in get_character_skins(character):
+                # button at gradient:
                 button:
+                    # hovered SetScreenVariable("on_hover", 1)
+                    # unhovered SetScreenVariable("on_hover", None)
+                    # if on_hover != 1:
+                    #     at gradient_hover
+                    # else:
+                    #     at gradient_idle
+
                     if _menu:
                         action [Function(force_update_skins, character, skin), ShowMenu("skins")]
                     else:
                         action [Function(update_skins, character, skin), ShowMenu("skins")]
                     frame:
-                        maximum 339, 593
-                        add (character + skin) fit "contain"
+                        background Solid("#00000000")
+                        maximum 355, 725
+
+                        add "gui/skin/bg_skin.png" fit "fill"
+
+                        add (character + skin) fit "contain":
+                            align (0.5, 0.5)
+
+                        button at gradient:
+                            pos -33, -12
+                            action NullAction()    
+                            frame:
+                                background Solid("#00000000")
+                                maximum 355, 725
+                                add "gui/skin/border_skin.png" fit "fill"
+
+                        
+                        add "gui/skin/card_skin.png" fit "fill":
+                            pos 0, 76
+
                         text _(character.title() + " " + skin):
                             anchor 0.5, 0.5
                             pos 0.5, 0.95
@@ -346,12 +402,14 @@ screen character_skins(character):
 
 
 style select_skin_character is text:   
-    color "#fba0af"
-    hover_color "#ffffff"
-    font "gui/font/College Block.otf"
-    size 40
-    outlines [ (absolute(4), "#000000", absolute(0), absolute(1)),
-                (absolute(4), "#250038", absolute(0), absolute(7)) ]
+    color "#ffffff"
+    font "gui/font/Source Sans Pro.otf"
+    size 18
+
+style select_skin_title is text:   
+    color "#ffffff"
+    font "gui/font/Source Sans Pro.otf"
+    size 54
 
 ################################################################################
 ## Main and Game Menu Screens
